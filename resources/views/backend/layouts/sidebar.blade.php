@@ -60,8 +60,8 @@
                         <li class="{{ Request::segment(1) === 'authentication' ? 'active' : null }}">
                             <a href="#" class="has-arrow"><i class="icon-picture"></i> <span>Banner Management</span></a>
                             <ul>                                    
-                                <li><a href="#">All Banner</a></li>
-                                <li><a href="#">Add Banner</a></li>
+                                <li><a href="{{ route('banner.index') }}">All Banner</a></li>
+                                <li><a href="{{ route('banner.create') }}">Add Banner</a></li>
                             </ul>
                         </li>
 
