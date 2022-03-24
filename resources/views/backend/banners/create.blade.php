@@ -52,7 +52,6 @@
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <label for="">Condition</label>
                             <select class="form-control show-tick" name="condition">
-                                <option value="">--Condition--</option>
                                 <option value="banner" {{ old('condition')=='banner' ? 'selected' : '' }}>Banner</option>
                                 <option value="promo" {{ old('condition')=='promo' ? 'selected' : '' }}>Promo</option>
                             </select>
@@ -60,7 +59,6 @@
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <label for="">Status</label>
                             <select class="form-control show-tick" name="status">
-                                <option value="">--Status--</option>
                                 <option value="active" {{ old('status')=='active' ? 'selected' : '' }}>Active</option>
                                 <option value="inactive" {{ old('status')=='inactive' ? 'selected' : '' }}>Inactive</option>
                             </select>

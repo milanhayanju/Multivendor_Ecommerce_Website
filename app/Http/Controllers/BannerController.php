@@ -50,7 +50,7 @@ class BannerController extends Controller
         $slug = Str::slug($request->input('title'));
         $slug_count = Banner::where('slug',$slug)->count();
         if($slug_count>0){
-            $slug .= time().'-'.$slug;
+            $slug = time().'-'.$slug;
         }
         $data['slug'] = $slug;
         $status = Banner::create($data);
